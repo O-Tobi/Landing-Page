@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server"
+    "start": "live-server",
+    "build": "mkdir dist\\css && copy styles.css dist\\css\\"
   },
   "author": "Oluwatobiloba Oladunjoye",
   "license": "ISC",
