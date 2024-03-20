@@ -1,37 +1,39 @@
 /* styling the header */
 
-.logo{
+.logo {
     font-size: 40px;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border: none;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     border: none;
     outline: none;
 }
 
-.nav-link{
+.nav-link {
     color: black;
     font-weight: 500;
     position: relative;
 }
 
-.nav-link:hover, .nav-link:active{
+.nav-link:hover,
+.nav-link:active {
     color: rgba(0, 0, 0, 0.514);
 }
 
 
 
-.nav-link:hover::before, .nav-link:first-child.active::before{
+.nav-link:hover::before,
+.nav-link:first-child.active::before {
     width: 100%;
     visibility: visible;
 }
 
 @media (min-width: 991px) {
-    .nav-link::before{
+    .nav-link::before {
         content: "";
         position: absolute;
         width: 0;
@@ -42,18 +44,19 @@
         transform: translateX(-50%);
         visibility: hidden;
         transition: 0.3s ease-in-out;
-        
+
     }
 }
 
-.list-unstyled a{
+.list-unstyled a {
     text-decoration: none;
     color: black;
     transition: color 0.3s ease;
 }
 
 .list-unstyled a:hover {
-    color: #007bff; /* Change color on hover */
+    color: #007bff;
+    /* Change color on hover */
 }
 
 
@@ -63,11 +66,18 @@
     background: url("./assets/pexels-artem-podrez-5726804.jpg");
     background-size: cover;
     height: 500px;
+
 }
 
 
-
-footer h4,h6{
-    color: #008DDA;
+.txt-bg{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
 }
+    
 
+footer h4, h6{
+        color: #008DDA
+}
