@@ -61,22 +61,52 @@
 
 
 .banner {
-    display: flex;
-    align-items: center;
+    position: relative;
+    height: 85vh;
+    width: 100%;
     background: url("./assets/pexels-artem-podrez-5726804.jpg");
+    background-position: center 65%;
     background-size: cover;
-    height: 500px;
-
+    background-attachment: fixed;
 }
 
+.banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
 
-.txt-bg{
-    background-color: rgba(0, 0, 0, 0.5);
+.banner .content {
+    position: relative;
+    z-index: 2;
+    height: 85%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
     padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
-}
     
+}
+
+.banner .content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.banner .content .text {
+    margin-bottom: 50px;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
 
 footer h4, h6{
         color: #008DDA
