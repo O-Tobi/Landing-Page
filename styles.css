@@ -68,6 +68,10 @@
     background-position: center 65%;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
 }
 
 .banner::before {
@@ -91,9 +95,9 @@
     flex-direction: column;
     color: #fff;
     text-align: center;
-    padding: 20px;
     
-}
+} 
+
 
 .banner .content h1 {
     font-size: 2rem;
